@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+app:
+  mq:
+    # Logical name of the application queue
+    queue-name: ASYNC.HELLO.WORLD
+
+# IBM MQ connection properties (used by mq-jms-spring-boot-starter)
+ibm:
+  mq:
+    queue-manager: QM1
+    channel: DEV.APP.SVRCONN
+    # Host and port of the MQ queue manager (Docker exposes 1414 on localhost)
+    conn-name: localhost(1414)
+    user: app
+    password: passw0rd
+
+logging:
+  level:
+    root: INFO
+    com.example.mqdemo: DEBUG

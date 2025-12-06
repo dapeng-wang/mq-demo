@@ -1,0 +1,6 @@
+* Create application queue used by the Spring Boot app
+DEFINE QLOCAL(ASYNC.HELLO.WORLD) REPLACE
+
+* Grant the default 'app' user permission to put/get on this queue
+SET AUTHREC PROFILE(ASYNC.HELLO.WORLD) OBJTYPE(QUEUE) PRINCIPAL('app') +
+    AUTHADD(BROWSE,GET,PUT,INQ)
