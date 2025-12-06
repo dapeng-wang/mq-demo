@@ -1,4 +1,4 @@
-package com.example.mqdemo.api;
+package net.kfw.async.mqdemo.api;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

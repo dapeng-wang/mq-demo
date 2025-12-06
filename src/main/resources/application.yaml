@@ -19,4 +19,4 @@ ibm:
 logging:
   level:
     root: INFO
-    com.example.mqdemo: DEBUG
+    net.kfw.async.mqdemo: DEBUG

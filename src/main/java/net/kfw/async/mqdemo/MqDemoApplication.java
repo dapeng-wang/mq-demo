@@ -1,4 +1,4 @@
-package com.example.mqdemo;
+package net.kfw.async.mqdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
